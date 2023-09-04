@@ -79,7 +79,7 @@ $$mse_{f_v} = \frac{\sum_{1 \leq i \leq n}(f_{pred_v}(x_i,t_i))^2}{n}$$
 
 Как менялась действительная часть выдачи нейросети в процессе обучения:  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/training_process.gif"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/train_process.gif"></p>  
 
 Статистика по всем проведённым экспериментам и данные для построения графиков находятся в файлах:
 [performance_table.xlsx](https://github.com/mikhakuv/PINNs/blob/main/statistics/performance_table.xlsx),
