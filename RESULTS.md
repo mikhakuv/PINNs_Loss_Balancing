@@ -41,45 +41,46 @@ $$mse_{f_v} = \frac{\sum_{1 \leq i \leq n}(f_{pred_v}(x_i,t_i))^2}{n}$$
 
 Из первого графика видно, что от увеличения числа коэффициентов метод SoftAdapt начинает работать всё хуже. Более того, кривая соответствующая опыту без балансировки коэффициентов проходит ниже, а значит SoftAdapt в данном случае только ухудшает обучение.
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/results_chart1.PNG"></p>    
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart1.PNG"></p>    
 
 Второй график подтверждает то, что SoftAdapt в данном случае мешает обучению, ведь опыт со случайными коэффициентами оказывается более успешным. В то же время незначительная модификация SoftAdapt всё-таки даёт результаты лучше.
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/results_chart2.PNG"></p>    
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart2.PNG"></p>    
 
 Третий график сравнивает лучшие кривые из графиков 1 и 2 с методом ReLoBRaLo. Отчётливо видно, что он обходит оба.
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/results_chart3.PNG"></p>    
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart3.PNG"></p>    
 
 На четвёртом графике собраны кривые со всех опытов. 
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/results_chart4.PNG"></p>   
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart4.PNG"></p>   
 
 На графике 5 изображены $mse_q$ для каждого из опытов после окончания обучения:  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/results_chart5.PNG"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart5.PNG"></p>  
 
 Из представленных выше графиков видно, что метод ReLoBRaLo с тремя коэффициентами позволяет получить наилучшие результаты. Ниже представлены результаты обучения нейросети таким методом:  
-Метрики: $mse_u = 1.160926 *10^{-2}, mse_v = 1.160940 *10^{-2}, mse_q = 2.385358 *10^{-6}, mse_{f_u} = 5.229450 *10^{-9}, mse_{f_v} = 4.394714 *10^{-9}$  
+Метрики: $mse_u = 1.160926 *10^{-2}, mse_v = 1.160940 *10^{-2}, mse_q = 2.385358 *10^{-6}, mse_{f_u} = 5.229450 *10^{-9}, mse_{f_v} = 4.394714 *10^{-9}$
+$mse_u: 4.272095 *10{-06}, mse_v: 4.305910 *10{-06}, mse_q: 6.840848 *10{-07}, mse_{f_u}: 2.922648 *10{-09}, mse_{f_v}: 2.940519 *10{-09}$
 Полученное решение(_pred) в сравнении с аналитическим(_truth):  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/exp23_results_u.png"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/exp23_results_v.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_u.png"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_v.png"></p>  
 
 модули полученного и аналитического решений в срезах по $t$(красный и зелёный соответственно):  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/exp23_results_q.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q.png"></p>  
 
 разность модулей полученного и аналитического решений:  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/exp23_results_q_diff.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q_diff.png"></p>  
 
 зависимость качества выполнения условий уравнения от $t$(чем ближе к 0, тем лучше):  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/exp23_results_mean.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_mean.png"></p>  
 
-зависимость качества выполнения законов сохранения от $t$(чем ближе к 0, тем лучше):  
+как менялись показания нейросети в процессе обучения:  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs/blob/main/pictures/exp23_results_laws.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/training_process.gif"></p>  
 
 Статистика по всем проведённым экспериментам и данные для построения графиков находятся в файлах:
 [performance_table.xlsx](https://github.com/mikhakuv/PINNs/blob/main/statistics/performance_table.xlsx),
