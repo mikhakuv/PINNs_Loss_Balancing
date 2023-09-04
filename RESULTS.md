@@ -63,19 +63,19 @@ $$mse_{f_v} = \frac{\sum_{1 \leq i \leq n}(f_{pred_v}(x_i,t_i))^2}{n}$$
 Метрики: $mse_u: 4.272095 *10{-06}, mse_v: 4.305910 *10{-06}, mse_q: 6.840848 *10{-07}, mse_{f_u}: 2.922648 *10{-09}, mse_{f_v}: 2.940519 *10{-09}$  
 Полученное решение(_pred) в сравнении с аналитическим(_truth):  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_u.png"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_v.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_u.PNG"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_v.PNG"></p>  
 
 Модули полученного и аналитического решений в срезах по $t$(красный и зелёный соответственно):  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q.PNG"></p>  
 
 Разность модулей полученного и аналитического решений:  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q_diff.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q_diff.PNG"></p>  
 
 Зависимость качества выполнения условий уравнения от $t$(чем ближе к 0, тем лучше):  
 
-<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_mean.png"></p>  
+<p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_mean.PNG"></p>  
 
 Как менялась действительная часть выдачи нейросети в процессе обучения:  
 
