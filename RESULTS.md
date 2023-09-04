@@ -60,8 +60,7 @@ $$mse_{f_v} = \frac{\sum_{1 \leq i \leq n}(f_{pred_v}(x_i,t_i))^2}{n}$$
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart5.PNG"></p>  
 
 Из представленных выше графиков видно, что метод ReLoBRaLo с тремя коэффициентами позволяет получить наилучшие результаты. Ниже представлены результаты обучения нейросети таким методом:  
-Метрики: $mse_u = 1.160926 *10^{-2}, mse_v = 1.160940 *10^{-2}, mse_q = 2.385358 *10^{-6}, mse_{f_u} = 5.229450 *10^{-9}, mse_{f_v} = 4.394714 *10^{-9}$
-$mse_u: 4.272095 *10{-06}, mse_v: 4.305910 *10{-06}, mse_q: 6.840848 *10{-07}, mse_{f_u}: 2.922648 *10{-09}, mse_{f_v}: 2.940519 *10{-09}$
+Метрики: $mse_u: 4.272095 *10{-06}, mse_v: 4.305910 *10{-06}, mse_q: 6.840848 *10{-07}, mse_{f_u}: 2.922648 *10{-09}, mse_{f_v}: 2.940519 *10{-09}$  
 Полученное решение(_pred) в сравнении с аналитическим(_truth):  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_u.png"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_v.png"></p>  
