@@ -43,19 +43,19 @@ $$mse_{f_v} = \frac{\sum_{1 \leq i \leq n}(f_{pred_v}(x_i,t_i))^2}{n}$$
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart1.PNG"></p>    
 
-Второй график подтверждает то, что SoftAdapt в данном случае мешает обучению, ведь опыт со случайными коэффициентами оказывается более успешным. В то же время незначительная модификация SoftAdapt всё-таки даёт результаты лучше.
+Второй график подтверждает то, что SoftAdapt в данном случае мешает обучению, ведь опыт со случайными коэффициентами оказывается более успешным. Но незначительная модификация SoftAdapt, имеющая память предыдущих итераций, всё-таки даёт результаты лучше, чем опыт со случайными коэффициентами.  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart2.PNG"></p>    
 
-Третий график сравнивает лучшие кривые из графиков 1 и 2 с методом ReLoBRaLo. Отчётливо видно, что он обходит оба.
+Третий график сравнивает лучшие кривые из графиков 1 и 2 с методом ReLoBRaLo. Отчётливо видно, что он обходит оба. Также можно заметить, что опыт, использующий SoftAdapt с памятью коэффициентов, лишь немного уступает в качестве опыту с отсутствием балансировки.  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart3.PNG"></p>    
 
-На четвёртом графике собраны кривые со всех опытов. 
+На четвёртом графике собраны кривые со всех опытов.  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart4.PNG"></p>   
 
-На графике 5 изображены $mse_q$ для каждого из опытов после окончания обучения:  
+На графике 5 изображены $mse_q$ каждого из опытов после окончания обучения:  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/results_chart5.PNG"></p>  
 
@@ -65,19 +65,19 @@ $$mse_{f_v} = \frac{\sum_{1 \leq i \leq n}(f_{pred_v}(x_i,t_i))^2}{n}$$
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_u.png"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_v.png"></p>  
 
-модули полученного и аналитического решений в срезах по $t$(красный и зелёный соответственно):  
+Модули полученного и аналитического решений в срезах по $t$(красный и зелёный соответственно):  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q.png"></p>  
 
-разность модулей полученного и аналитического решений:  
+Разность модулей полученного и аналитического решений:  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_q_diff.png"></p>  
 
-зависимость качества выполнения условий уравнения от $t$(чем ближе к 0, тем лучше):  
+Зависимость качества выполнения условий уравнения от $t$(чем ближе к 0, тем лучше):  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/exp6_results_mean.png"></p>  
 
-как менялись показания нейросети в процессе обучения:  
+Как менялась действительная часть выдачи нейросети в процессе обучения:  
 
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/training_process.gif"></p>  
 
@@ -86,7 +86,7 @@ $$mse_{f_v} = \frac{\sum_{1 \leq i \leq n}(f_{pred_v}(x_i,t_i))^2}{n}$$
 [stats.xlsx](https://github.com/mikhakuv/PINNs/blob/main/statistics/stats.xlsx)  
 
 ### Вывод
-В данной работе изучалась эффективность методов балансировки коэффициентов при решении обобщённого уравнения Шрёдингера в нелинейной среде. Проведённые эксперименты показали, что ни SoftAdapt ни его улучшенная версия с памятью коэффициентов не дают никакой выгоды, наоборот, они замедляют обучение и ухудшают результаты. В то же время метод ReLoBRaLo даёт некоторое преимущество и позволяет достигнуть очень высокой точности в решении рассмотренного уравнения.  
+В данной работе изучалась эффективность методов балансировки коэффициентов при решении обобщённого уравнения Шрёдингера в нелинейной среде. Проведённые эксперименты показали, что ни SoftAdapt ни его улучшенная версия с памятью коэффициентов не дают никакой выгоды по сравнению с отсутствием балансировки. Наоборот, они замедляют обучение и ухудшают результаты. В то же время метод ReLoBRaLo даёт некоторое преимущество и позволяет достигнуть очень высокой точности в решении рассмотренного уравнения.  
 # Обзор Литературы  
 1. !!!статья с уравнением
 3. *Maziar Raissi, Paris Perdikaris, George Em Karniadakis* "Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations"
