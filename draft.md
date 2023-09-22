@@ -25,7 +25,7 @@ $$q(x, t)=\Bigg[\frac{\left(4 k^{2} - 4 w\right) e^{\sqrt{4 k^{2} - 4 w} \left(-
 Мерой успеха считалось значение функции $mse_q$ , вычисляемое как: $$mse_q=\frac{\sum\limits_{i=1}^n(\sqrt{u_{truth}(x_i,t_i)^2 +v_{truth}(x_i,t_i)^2} - \sqrt{u_{pred}(x_i,t_i)^2 +v_{pred}(x_i,t_i)^2})^2}{n}$$ где $n$ - количество рассматриваемых точек на области  
 Также вычислялись $mse_u$, $mse_v$, $mse_{f_u}$, $mse_{f_v}$:
 $$mse_u = \frac{\sum\limits_{i=1}^n(u_{truth}(x_i,t_i)-u_{pred}(x_i,t_i))^2}{n}$$
-$$mse_v = \frac{\sum\limits_{i=1}^n{1 \leq i \leq n}(v_{truth}(x_i,t_i)-v_{pred}(x_i,t_i))^2}{n}$$
+$$mse_v = \frac{\sum\limits_{i=1}^n(v_{truth}(x_i,t_i)-v_{pred}(x_i,t_i))^2}{n}$$
 $$mse_{f_u} = \frac{\sum\limits_{i=1}^n(f_{pred_u}(x_i,t_i))^2}{n}$$
 $$mse_{f_v} = \frac{\sum\limits_{i=1}^n(f_{pred_v}(x_i,t_i))^2}{n}$$
 ### Результаты
