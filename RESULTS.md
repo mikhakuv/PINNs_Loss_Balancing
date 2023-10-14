@@ -89,6 +89,6 @@ $$mse_{f_v} = \frac{\sum\limits_{i=1}^n(f_{pred_v}(x_i,t_i))^2}{n}$$
 В данной работе изучалась эффективность методов балансировки коэффициентов при решении обобщённого уравнения Шрёдингера в нелинейной среде. Проведённые эксперименты показали, что ни SoftAdapt ни его улучшенная версия с памятью коэффициентов не дают никакой выгоды по сравнению с отсутствием балансировки. Наоборот, они замедляют обучение и ухудшают результаты. В то же время метод ReLoBRaLo даёт некоторое преимущество и позволяет достигнуть очень высокой точности в решении рассмотренного уравнения.  
 # Обзор Литературы  
 1. !!!статья с уравнением
-3. *Maziar Raissi, Paris Perdikaris, George Em Karniadakis* "Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations"
-4. *A. Ali Heydari, Craig A. Thompson, Asif Mehmood* "SoftAdapt: Techniques for Adaptive Loss Weighting of Neural Networks with Multi-Part Loss Functions"
-5. *Rafael Bischof, Michael Kraus* "Multi-Objective Loss Balancing for Physics-Informed Deep Learning"
+2. *Maziar Raissi, Paris Perdikaris, George Em Karniadakis* "Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations"
+3. *A. Ali Heydari, Craig A. Thompson, Asif Mehmood* "SoftAdapt: Techniques for Adaptive Loss Weighting of Neural Networks with Multi-Part Loss Functions"
+4. *Rafael Bischof, Michael Kraus* "Multi-Objective Loss Balancing for Physics-Informed Deep Learning"
