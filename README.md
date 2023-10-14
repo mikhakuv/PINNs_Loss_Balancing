@@ -10,4 +10,4 @@ This repository represents experiments 18-23 from the [PINNs](https://github.com
 In folder [experiments](https://github.com/mikhakuv/PINNs_Loss_Balancing/tree/main/experiments) you can find descriptions of the conducted experiments and link to the code at colaboratory,  
 In folder [notebooks](https://github.com/mikhakuv/PINNs_Loss_Balancing/tree/main/notebooks) you can find preloaded notebooks,  
 Folder [statistics](https://github.com/mikhakuv/PINNs_Loss_Balancing/tree/main/statistics) contains statistics of all conducted experiments,  
-Final report with the statement of the problem, theory and obtained results located in [RESULTS.md](https://github.com/mikhakuv/PINNs_Loss_Balancing/blob/main/RESULTS.md). However it is written in Russian, there many charts and formulas, so it possible to understand the main idea.
+Final report with the statement of the problem, theory and obtained results located in [RESULTS.md](https://github.com/mikhakuv/PINNs_Loss_Balancing/blob/main/RESULTS.md). Though it is written in Russian, there many charts and formulas, so it possible to understand the main idea.
