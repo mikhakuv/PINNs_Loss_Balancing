@@ -82,8 +82,8 @@ $$mse_{f_v} = \frac{\sum\limits_{i=1}^n(f_{pred_v}(x_i,t_i))^2}{n}$$
 <p align="center"><img src="https://github.com/mikhakuv/PINNs_for_article/blob/main/pictures/train_process.gif"></p>  
 
 Статистика по всем проведённым экспериментам и данные для построения графиков находятся в файлах:
-[performance_table.xlsx](https://github.com/mikhakuv/PINNs/blob/main/statistics/performance_table.xlsx),
-[stats.xlsx](https://github.com/mikhakuv/PINNs/blob/main/statistics/stats.xlsx)  
+[performance_table.xlsx](https://github.com/mikhakuv/PINNs_Loss_Balancing/blob/main/statistics/performance_table.xlsx),
+[stats.xlsx](https://github.com/mikhakuv/PINNs_Loss_Balancing/blob/main/statistics/stats.xlsx)  
 
 ### Вывод
 В данной работе изучалась эффективность методов балансировки коэффициентов при решении обобщённого уравнения Шрёдингера в нелинейной среде. Проведённые эксперименты показали, что ни SoftAdapt ни его улучшенная версия с памятью коэффициентов не дают никакой выгоды по сравнению с отсутствием балансировки. Наоборот, они замедляют обучение и ухудшают результаты. В то же время метод ReLoBRaLo даёт некоторое преимущество и позволяет достигнуть очень высокой точности в решении рассмотренного уравнения.  
